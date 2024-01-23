@@ -1,0 +1,7 @@
+vcom C:/VHDL/lab1/src/and2_garte.vhd
+vsim and2_gate
+add wave -group my_first_group and2_gate/*
+
+force A 0 0ns, 1 10ns, 0 20ns, 1 30ns
+force B 0 0ns, 1 20ns, 0 60ns
+run 100ns
